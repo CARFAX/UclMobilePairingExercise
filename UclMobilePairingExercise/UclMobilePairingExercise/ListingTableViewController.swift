@@ -1,9 +1,12 @@
 import UIKit
 
+// ENDPOINT: https://carfax-for-consumers.firebaseio.com/assignment.json
+
 final class ListingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getListings()
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -15,11 +18,15 @@ final class ListingTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        UITableViewCell()
     }
     
-    private func getListings() {
+    func getListings() {
+        let url = URL(string: "https://carfax-for-consumers.firebaseio.com/assignment.json")!
+        let request = URLRequest(url: url)
         
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            
+        }.resume()
     }
 }
-
