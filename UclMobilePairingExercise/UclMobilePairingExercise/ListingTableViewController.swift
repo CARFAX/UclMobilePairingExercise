@@ -20,7 +20,7 @@ import UIKit
 └─────────────────────────────────────┘
  */
 
-// ENDPOINT: https://carfax-for-consumers.firebaseio.com/assignment.json
+// ENDPOINT: https://carfax-for-consumers.firebaseio.com/assignmentv3.json
 
 final class ListingTableViewController: UITableViewController {
     override func viewDidLoad() {
