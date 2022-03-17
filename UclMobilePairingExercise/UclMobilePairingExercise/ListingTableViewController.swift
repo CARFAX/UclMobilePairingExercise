@@ -10,9 +10,9 @@ import UIKit
 │                                     │
 │                                     │
 ├─────────────────────────────────────┤
-│  2020 Acura ILX                     │
+│  2020 Acura ILX                  │
 │                                     │
-│  Centreville VA                     │
+│  Centreville VA                    │
 │                                     │
 │        ┌───────────────────┐        │
 │        │  (973) 585-4290   │        │
@@ -20,7 +20,7 @@ import UIKit
 └─────────────────────────────────────┘
  */
 
-// ENDPOINT: https://carfax-for-consumers.firebaseio.com/assignmentv3.json
+// ENDPOINT: https://carfax-for-consumers.web.app/assignmentv3.json
 
 final class ListingTableViewController: UITableViewController {
     override func viewDidLoad() {
@@ -42,7 +42,7 @@ final class ListingTableViewController: UITableViewController {
     }
     
     func getListings() {
-        let url = URL(string: "https://carfax-for-consumers.firebaseio.com/assignment.json")!
+        let url = URL(string: "https://carfax-for-consumers.web.app/assignment.json")!
         let request = URLRequest(url: url)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
