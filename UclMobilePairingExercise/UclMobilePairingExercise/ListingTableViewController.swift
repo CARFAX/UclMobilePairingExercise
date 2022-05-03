@@ -42,7 +42,7 @@ final class ListingTableViewController: UITableViewController {
     }
     
     func getListings() {
-        let url = URL(string: "https://carfax-for-consumers.web.app/assignment.json")!
+        let url = URL(string: "https://carfax-for-consumers.web.app/assignmentv3.json")!
         let request = URLRequest(url: url)
         
         URLSession.shared.dataTask(with: request) { data, response, error in
